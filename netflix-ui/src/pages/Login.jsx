@@ -67,10 +67,6 @@ function Login() {
                 Sign up now.
               </Link>
               <br />
-              <span className="text-white opacity-75">
-                This page is protected by Google reCAPTCHA to ensure you're not
-                a bot.
-              </span>
             </div>
           </div>
         </div>
