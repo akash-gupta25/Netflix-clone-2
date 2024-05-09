@@ -40,7 +40,7 @@ function Footer() {
       </div>
       <div className="border-t border-gray-700 py-6 mt-12">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-          <p className="text-gray-400">Copyright © 2023 Netflix, Inc.</p>
+          <p className="text-gray-400">Copyright © 2024 Netflix, Inc.</p>
           <ul className="flex mt-6 lg:mt-0">
             <li className="mr-8">
               <a href="#" className="text-gray-400 hover:text-white">Privacy</a>
