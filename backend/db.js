@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 // const DbUrl = "mongodb+srv://akashmovies:3CEx07fwiQpZYnDO@cluster0.cdbkvld.mongodb.net:27017/test";
 // const DbUrl = "mongodb+srv://akashmovies:3CEx07fwiQpZYnDO@cluster0.cdbkvld.mongodb.net:27017/netflix-clone?retryWrites=true&w=majority&appName=Cluster0";
 // const DbUrl = "mongodb+srv://akashmovies:3CEx07fwiQpZYnDO@cluster0.cdbkvld.mongodb.net:27017/netflix-clone?retryWrites=true&w=majority";
-const uri = "mongodb+srv://akashmovies:3CEx07fwiQpZYnDO@cluster0.cdbkvld.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://akashmovies:3CEx07fwiQpZYnDO@cluster0.cdbkvld.mongodb.net/netflix-clone?retryWrites=true&w=majority&appName=Cluster0";
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 
 
