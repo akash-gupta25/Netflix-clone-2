@@ -10,7 +10,8 @@ const clientOptions = { serverApi: { version: '1', strict: true, deprecationErro
 
 
  exports.Database= function Database() {
-    mongoose.set('strictQuery', false);
+    // mongoose.set('strictQuery', false);
+    try {
     mongoose.connect(DbUrl,clientOptions)
     .then(() => {
       console.log("DB Connetion Successfull");
@@ -20,4 +21,11 @@ const clientOptions = { serverApi: { version: '1', strict: true, deprecationErro
     });
     mongoose.connection.db.admin().command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } catch(error){
+    console.dir(error);
+  }
+  finally {
+    // Ensures that the client will close when you finish/error
+    await mongoose.disconnect();
+  }
 }
